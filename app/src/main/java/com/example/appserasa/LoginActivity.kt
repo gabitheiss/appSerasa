@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity(), TextWatcher {
         buttonLogin = findViewById(R.id.buttonLogin)
 
 
-      //atribuimos click ao botão e vamos validar se os campos foram preenchidos corretamente
+        //atribuimos click ao botão e vamos validar se os campos foram preenchidos corretamente
         buttonLogin.setOnClickListener {
             if (validarCamposParaLogin()) {
                 fazerLogin()
@@ -42,6 +42,7 @@ class LoginActivity : AppCompatActivity(), TextWatcher {
             }
         }
     }
+
     //funcão para validar se os campos não estão nulos
     private fun validarCamposParaLogin(): Boolean {
         val cpf = inputCpf.text.toString()
@@ -63,7 +64,7 @@ class LoginActivity : AppCompatActivity(), TextWatcher {
     }
 
     //abaixo as funções para ir digitando nos inputs e ja ir aparecendo na tela real time
-    
+
     override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
     }
 
